@@ -22,11 +22,23 @@
 @media screen and (max-width: 767px) {
   .portfolio-item {
     max-width: 450px;
-   
   }
 }
-.portfolio-img {
-  max-width: 100%;
+@media screen and (min-width: 768px) {
+  .portfolio-item {
+    width: 354px;
+    height: 440px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-img{
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio-img{
+    max-width: 100%;
+  }
 }
 .portfolio-item:hover {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 1px 1px rgba(0, 0, 0, 0.06),
@@ -60,6 +72,11 @@
   border-left: 1px solid rgba(238, 238, 238, 1);
   border-right: 1px solid rgba(238, 238, 238, 1);
   border-bottom: 1px solid rgba(238, 238, 238, 1);
+}
+@media screen and (min-width: 768px) {
+  .portfolio-box {
+    height: 146px;
+  }
 }
 .portfolio-title {
   margin-top: 0px;

@@ -21,9 +21,11 @@
         <div class="container header__container">
             <div class="legendary__combo">
                 <a href="#" class="header__logo rotate-center">Web<span class="header__span">Studio</span></a>
-                <svg class="burger">
-                    <use href="symbol-defs.svg#icon-menu"></use>
-                </svg>
+                <button type="button" class="open-burger__btn" data-burger-open>
+                    <svg class="burger">
+                        <use href="symbol-defs.svg#icon-menu"></use>
+                    </svg>
+                </button>
             </div>
             <nav class="header__navigation">
                 <ul class="header__list list">
@@ -53,6 +55,7 @@
                     </li>
                 </ul>
             </div>
+        </div>
         </div>
     </header>
     <main class="main">
@@ -116,7 +119,7 @@
                     <li class="what-we-do__item">
                         <picture>
                             <source srcset="./img/desktop/work-1.jpg 1x,
-                                ./images/desktop/work-1@2x.jpg 2x" media="(min-width: 1200px)" />
+                                ./img/desktop/work-1@2x.jpg 2x" media="(min-width: 1200px)" />
                             <img src="./img/desktop/work-1.jpg" alt="Клавіатура" class="What-we-do__item__img img" />
                         </picture>
                         <div class="what-we-do__box">
@@ -126,7 +129,7 @@
                     <li class="what-we-do__item">
                         <picture>
                             <source srcset="./img/desktop/work-2.jpg 1x,
-                            ./images/desktop/work-2@2x.jpg 2x" media="(min-width: 1200px)" />
+                            ./img/desktop/work-2@2x.jpg 2x" media="(min-width: 1200px)" />
                             <img src="./img/desktop/work-2.jpg" alt="Клавіатура" class="What-we-do__item__img img" />
                         </picture>
                         <div class="what-we-do__box">
@@ -136,7 +139,7 @@
                     <li class="what-we-do__item">
                         <picture>
                             <source srcset="./img/desktop/work-3.jpg 1x,
-                            ./images/desktop/work-3@2x.jpg 2x" media="(min-width: 1200px)" />
+                            ./img/desktop/work-3@2x.jpg 2x" media="(min-width: 1200px)" />
                             <img src="./img/desktop/work-3.jpg" alt="Клавіатура" class="What-we-do__item__img img" />
                         </picture>
                         <div class="what-we-do__box">
@@ -364,10 +367,11 @@
         <div class="modal">
             <button class="modal__btn" data-modal-close><svg width="11" height="11">
                     <use href="symbol-defs.svg#icon-no"></use>
-                </svg></button>
+                </svg>
+            </button>
             <h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
             <form class="modal__form">
-                <p class="modal__form__text">Ім'я</p>
+                <p class="modal__form__text oruro">Ім'я</p>
                 <label class="modal__label">
                     <svg class="email">
                         <use href="symbol-defs.svg#icon-men"></use>
@@ -402,5 +406,50 @@
             <div class="modal__box__btn"><button class="modal__baton">Відправити</button></div>
         </div>
     </div>
+    <div class="burger-menu" data-burger>
+        <div class="burger__container">
+            <button class="burger__close__btn" data-burger-close>
+                <svg width="11" height="11">
+                    <use href="symbol-defs.svg#icon-no"></use>
+                </svg>
+            </button>
+            <ul class="burger__list">
+                <li class="burger__item">
+                    <a class="burger__text" href="">Студія</a>
+                </li>
+                <li class="burger__item centre">
+                    <a class="burger__text" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="burger__item">
+                    <a class="burger__text" href="">Контакти</a>
+                </li>
+            </ul>
+            <div class="burger__box">
+                <ul class="burger__contact__list">
+                    <li class="burger__contact__item">
+                        <a class="burger__contact__phone" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="burger__contact__item">
+                        <a class="burger__contact__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="burger-social__list">
+                    <li class="burger__dos__item none">
+                        <a class="burger__dos__link">Instagram</a>
+                    </li>
+                    <li class="burger__dos__item">
+                        <a class="burger__dos__link">Twitter</a>
+                    </li>
+                    <li class="burger__dos__item">
+                        <a class="burger__dos__link">Facebook</a>
+                    </li>
+                    <li class="burger__dos__item nonet">
+                        <a class="burger__dos__link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./js.style/burger.js"></script>
     <script src="./js.style/modal.js"></script>
 </body>
